@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
   // Add a click event on each of them
-  $navbarBurgers.forEach( el => {
+  $navbarBurgers.forEach(el => {
     el.addEventListener('click', () => {
 
       // Get the target from the "data-target" attribute
@@ -18,4 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#profile-carousel', {
+    type: 'loop',
+    perPage: 1,
+    autoplay: true,
+    interval: 5000,
+    arrows: false,
+    pagination: true,
+  }).mount();
 });

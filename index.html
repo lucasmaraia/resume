@@ -7,6 +7,7 @@
     <title>Lucas Clinio Maraia - Desenvolvedor Web</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 
 <body>
@@ -55,11 +56,25 @@
                     <h1 class="title is-1">Lucas Clinio Maraia</h1>
                     <h2 class="subtitle is-3 has-text-grey">Desenvolvedor Web</h2>
                 </div>
-
                 <div class="column has-text-centered profile-column">
-                    <figure class="image is-1280x1280 is-inline-block">
-                        <img class="is-rounded" src="images/lucas-clinio-maraia-photo.jpg" alt="Foto de Lucas Clinio Maraia">
-                    </figure>
+                    <div id="profile-carousel" class="splide is-inline-block" aria-label="Fotos de Lucas">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <figure class="image is-inline-block">
+                                        <img class="is-rounded" src="images/lucas-clinio-maraia-photo-hackathon.jpg"
+                                            alt="Foto 1">
+                                    </figure>
+                                </li>
+                                <li class="splide__slide">
+                                    <figure class="image is-inline-block">
+                                        <img class="is-rounded" src="images/lucas-clinio-maraia-photo-tech-day.jpg"
+                                            alt="Foto 2">
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -69,7 +84,10 @@
             <div class="box">
                 <h3 class="title is-4">Resumo Profissional</h3>
                 <div class="content">
-                    <p>Sou desenvolvedor Java com mais de 5 anos de experiência trabalhando com o ecossistema Spring. Tenho foco em microsserviços e aplicações web robustas, usando Spring Boot no dia a dia. Também tenho experiência com Kubernetes, bancos de dados relacionais e não-relacionais, e costumo seguir práticas ágeis no desenvolvimento.</p>
+                    <p>Sou desenvolvedor Java com mais de 5 anos de experiência trabalhando com o ecossistema Spring.
+                        Tenho foco em microsserviços e aplicações web robustas, usando Spring Boot no dia a dia. Também
+                        tenho experiência com Kubernetes, bancos de dados relacionais e não-relacionais, e costumo
+                        seguir práticas ágeis no desenvolvimento.</p>
                 </div>
             </div>
         </div>
@@ -104,7 +122,8 @@
                 <div class="content">
                     <ul>
                         <li>Desenvolvimento full-stack com <strong>Vraptor/Spring Boot</strong> (back-end) e
-                            <strong>Bootstrap/jQuery</strong> (front-end)</li>
+                            <strong>Bootstrap/jQuery</strong> (front-end)
+                        </li>
                         <li>Gestão de bancos de dados <strong>SQL Server</strong> e <strong>MySQL</strong></li>
                         <li>Implantação em nuvem <strong>AWS</strong></li>
                     </ul>
@@ -214,8 +233,7 @@
             </p>
         </div>
     </footer>
-    <script src="js/script.js">
-    </script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </body>
-
 </html>
